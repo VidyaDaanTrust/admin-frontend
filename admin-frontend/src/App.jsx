@@ -17,7 +17,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 // import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 // import Teaching from "./pages/Teaching/Teaching.jsx";
 // import Home from "./pages/Home/Home.jsx";
-import Login from './pages/Login/Login';
+// import Login from './pages/Login/Login';
 // import Register from './pages/Register';
 import Dashboard from './Pages/Dashboard/Dashboard.jsx';
 
@@ -53,9 +53,9 @@ const App = () => {
             {!isAuthPage && <Navbar />}
             <main>
                 <Routes>
-                    <Route path="/" element={<Dashboard />} />
+                    <Route path="*" element={<Dashboard />} />
                     {/* <Route path="/about-us" element={<AboutUs />} /> */}
-                    <Route path="/login" element={<Login />} />
+                    {/* <Route path="/login" element={<Login />} /> */}
                     {/* <Route path="/register" element={<Register />} /> */}
                     {/* <Route
                         path="/dashboard"
