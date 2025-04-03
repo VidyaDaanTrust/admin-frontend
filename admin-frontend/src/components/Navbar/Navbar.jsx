@@ -41,13 +41,13 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <ul className="navbar-menu">
         <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
-        <li><Link to="/about-us" className={location.pathname === '/about-us' ? 'active' : ''}>Recent</Link></li>
-        <li><Link to="/teaching" className={location.pathname === '/teaching' ? 'active' : ''}>Slot Coordinators</Link></li>
-        <li><Link to="/for-students" className={location.pathname === '/for-students' ? 'active' : ''}>Brochure</Link></li>
-        <li><Link to="/trustees" className={location.pathname === '/trustees' ? 'active' : ''}>Reports</Link></li>
+        <li><Link to="/recent" className={location.pathname === '/recent' ? 'active' : ''}>Recent</Link></li>
+        <li><Link to="/slot-coordinators" className={location.pathname === '/slot-coordinators' ? 'active' : ''}>Slot Coordinators</Link></li>
+        <li><Link to="/brochure" className={location.pathname === '/brochure' ? 'active' : ''}>Brochure</Link></li>
+        <li><Link to="/reports" className={location.pathname === '/reports' ? 'active' : ''}>Reports</Link></li>
         <li className='login-button-navbar-me'>
-          <Link to="/login" className={location.pathname === '/login' ? 'active' : ''} >
-            Login ›
+          <Link to="/logout" className={location.pathname === '/logout' ? 'active' : ''} >
+            Log Out ›
           </Link>
         </li>
 
@@ -65,10 +65,10 @@ const Navbar = () => {
       <div className="sidebar">
         <ul>
           <li><Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Home</Link></li>
-          <li><Link to="/about-us" className={location.pathname === '/about-us' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Recent</Link></li>
-          <li><Link to="/teaching" className={location.pathname === '/teaching' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Slot Coordinators</Link></li>
-          <li><Link to="/for-students" className={location.pathname === '/for-students' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Brochure</Link></li>
-          <li><Link to="/downloads" className={location.pathname === '/downloads' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Reports</Link></li>
+          <li><Link to="/recent" className={location.pathname === '/recent' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Recent</Link></li>
+          <li><Link to="/slot-coordinators" className={location.pathname === '/slot-coordinators' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Slot Coordinators</Link></li>
+          <li><Link to="/brochure" className={location.pathname === '/brochure' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Brochure</Link></li>
+          <li><Link to="/reports" className={location.pathname === '/reports' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Reports</Link></li>
           {/* Show Profile if user is logged in, otherwise show Login */}
           {/* {isAuth ? (
             <li><Link to="/profile" className={location.pathname === '/profile' ? 'active' : ''} onClick={() => document.getElementById("menu-toggle").checked = false}>Profile</Link></li>
